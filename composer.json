@@ -1,0 +1,25 @@
+{
+    "name": "wiz-develop/php-cs-fixer-config",
+    "description": "🛠 php-cs-fixer configuration for wiz-develop.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WizDevelop\\PhpCsFixerConfig\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shigenao Kakiuchi",
+            "email": "kakiuchi-shigenao@wiznet.co.jp"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.3",
+        "friendsofphp/php-cs-fixer": "^3.54"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
