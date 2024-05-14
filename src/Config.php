@@ -113,6 +113,14 @@ final class Config extends \PhpCsFixer\Config
                 ],
             ],
 
+            // https://cs.symfony.com/doc/rules/operator/binary_operator_spaces.html
+            'binary_operator_spaces' => [
+                'default' => 'at_least_single_space',
+                'operators' => [
+                    '=' => 'single_space',
+                ],
+            ],
+
             // NOTE: 現状、true にすると未使用のuse文が削除されないバグがある。
             // @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues/6431
             // https://cs.symfony.com/doc/rules/import/group_import.html
