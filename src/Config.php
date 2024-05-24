@@ -121,6 +121,16 @@ final class Config extends \PhpCsFixer\Config
                 ],
             ],
 
+            // https://cs.symfony.com/doc/rules/import/ordered_imports.html
+            'ordered_imports' => [
+                'sort_algorithm' => 'alpha',
+                'imports_order' => [
+                    'class',
+                    'function',
+                    'const',
+                ],
+            ],
+
             // NOTE: 現状、true にすると未使用のuse文が削除されないバグがある。
             // @see https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues/6431
             // https://cs.symfony.com/doc/rules/import/group_import.html
